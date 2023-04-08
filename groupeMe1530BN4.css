@@ -97,47 +97,6 @@ body {
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 800px) {
-    .jaojoby {
-        width: 300px;
-    }
-}
-
-@media screen and (max-width: 590px) {
-    .container {
-        padding: 100px;
-        display: flex;
-        flex-direction: row-reverse;
-    }
-
-    .logo_music {
-        margin: 50px 0px;
-    }
-
-    .description {
-        max-width: 300px;
-    }
-
-    .jaojoby {
-        width: 250px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .container {
-        padding: 60px;
-        flex-direction: row-reverse;
-    }
-
-    .description {
-        max-width: 300px;
-    }
-
-    .logo_music {
-        margin: 50px 0px;
-    }
-}
-
 nav {
     background-color: orange;
     display: flex;
@@ -186,4 +145,56 @@ nav li a {
 nav li a:hover {
     background-color: white;
     color: orange;
+}
+
+
+@media screen and (max-width: 800px) {
+    .jaojoby {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .container {
+        padding: 100px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .logo_music {
+        margin: 50px 0px;
+    }
+
+    .description {
+        max-width: 300px;
+    }
+
+    .jaojoby {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        flex-direction: row-reverse;
+        justify-content: center;
+        padding : 20px;
+    }
+
+    .description {
+        max-width: 300px;
+    }
+
+    .logo_music {
+        margin: 50px 0px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    nav h1 a{
+        display: none;
+    }
+    nav{
+        justify-content: center;
+    }
 }
