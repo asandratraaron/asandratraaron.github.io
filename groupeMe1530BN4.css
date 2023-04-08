@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('photos/cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    object-fit: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 125px;
+}
+
+.description {
+    flex: 50;
+}
+
+.Bienvenue {
+    border-bottom: 2px solid;
+    font-weight: bold;
+    justify-content: left;
+    height: auto;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.definition {
+    font-size: 15.5px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.logo_music {
+    flex: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_music_jb {
+    flex: 50;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.decouvrir {
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: orange;
+    width: 100px;
+    padding: 10px 20px;
+    justify-content: center;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.decouvrir:hover{
+    background-color: white;
+    color: orange;
+}
+
+.buttoncontainer {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.musique {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: capitalize;
+}
+
+.Mada-music {
+    font-size: 25px;
+    color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .jaojoby {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .container {
+        padding: 100px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .logo_music {
+        margin: 50px 0px;
+    }
+
+    .description {
+        max-width: 300px;
+    }
+
+    .jaojoby {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 60px;
+        flex-direction: row-reverse;
+    }
+
+    .description {
+        max-width: 300px;
+    }
+
+    .logo_music {
+        margin: 50px 0px;
+    }
+}
+
+nav {
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    padding-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 60px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    padding-right: 30px ;
+}
+nav h1 a{
+    color: white;
+    font-size: 20px;
+    line-height: 60px;
+    margin: 0;
+    text-decoration: none;
+
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+nav li {
+    display: inline-block;
+    height: 100%;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    line-height: 60px;
+    transition: background-color 0.5s ease;
+    display: block;
+    height: 100%;
+    padding: 0 20px;
+    font-size:large;
+}
+
+nav li a:hover {
+    background-color: white;
+    color: orange;
+}
